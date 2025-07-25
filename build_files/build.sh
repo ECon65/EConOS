@@ -21,7 +21,7 @@ set -ouex pipefail
 
 dnf5 copr enable --assumeyes solopasha/hyprland
 dnf5 copr enable --assumeyes peterwu/rendezvous
-dnf5 copr enable --assumeyes wef/cliphist
+# dnf5 copr enable --assumeyes wef/cliphist
 dnf5 copr enable --assumeyes tofik/nwg-shell
 dnf5 copr enable --assumeyes erikreider/SwayNotificationCenter
 
@@ -29,7 +29,7 @@ dnf5 install --assumeyes wget unzip gum rsync git figlet xdg-user-dirs hyprland 
 
 dnf5 copr disable --assumeyes solopasha/hyprland
 dnf5 copr disable --assumeyes peterwu/rendezvous
-dnf5 copr disable --assumeyes wef/cliphist
+# dnf5 copr disable --assumeyes wef/cliphist
 dnf5 copr disable --assumeyes tofik/nwg-shell
 dnf5 copr disable --assumeyes erikreider/SwayNotificationCenter
 
