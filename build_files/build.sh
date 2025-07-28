@@ -27,8 +27,10 @@ dnf5 copr enable --assumeyes erikreider/SwayNotificationCenter
 
 dnf5 install --assumeyes --skip-unavailable xdg-user-dirs hyprland hyprpaper hyprlock hypridle hyprpicker xdg-desktop-portal-hyprland libnotify qt5-qtwayland qt6-qtwayland uwsm xdg-desktop-portal-gtk python-pip python3-gobject python-screeninfo tumbler brightnessctl nm-connection-editor network-manager-applet gtk4 libadwaita fuse blueman waypaper nwg-look nwg-displays qt6ct waybar rofi-wayland pavucontrol papirus-icon-theme papirus-icon-theme-dark breeze flatpak SwayNotificationCenter gvfs wlogout bibata-cursor-themes NetworkManager-tui nwg-dock-hyprland
 
-dnf5 remove --assumeyes kitty xclip wget unzip rsync git nautilus neovim htop zsh fzf vlc jq gum figlet fastfetch ImageMagick wl-clipboard grim slurp cliphist matugen google-noto-emoji-fonts google-noto-sans-cjk-fonts fontawesome-fonts dejavu-fonts-all
+dnf5 autoremove --assumeyes
 
+# Removing packages which are now installed via nix/home-manager
+# dnf5 remove --assumeyes kitty xclip wget unzip rsync git nautilus neovim htop zsh fzf vlc jq gum figlet fastfetch ImageMagick wl-clipboard grim slurp cliphist matugen google-noto-emoji-fonts google-noto-sans-cjk-fonts fontawesome-fonts dejavu-fonts-all
 # replacing noto-fonts with google-noto-fonts-common
 # replacing xclip with wl-clipboard
 # Cleaning up to keep the base as small as possible
