@@ -25,13 +25,15 @@ dnf5 copr enable --assumeyes peterwu/rendezvous
 dnf5 copr enable --assumeyes tofik/nwg-shell
 dnf5 copr enable --assumeyes erikreider/SwayNotificationCenter
 
-dnf5 install --assumeyes --skip-unavailable xdg-user-dirs hyprland hyprpaper hyprlock hypridle hyprpicker xdg-desktop-portal-hyprland libnotify qt5-qtwayland qt6-qtwayland uwsm xdg-desktop-portal-gtk python-pip python3-gobject python-screeninfo tumbler brightnessctl nm-connection-editor network-manager-applet gtk4 libadwaita fuse blueman waypaper nwg-look nwg-displays qt6ct waybar rofi-wayland pavucontrol papirus-icon-theme papirus-icon-theme-dark breeze flatpak SwayNotificationCenter gvfs wlogout bibata-cursor-themes NetworkManager-tui nwg-dock-hyprland
+# Hyprland
+dnf5 install --assumeyes --skip-unavailable hyprland hyprpaper hyprlock hypridle hyprpicker xdg-desktop-portal-hyprland uwsm hyprland-plugins hyprdim hyprsunset
+# Wayland general
+dnf5 install --assumeyes --skip-unavailable waypaper nwg-look nwg-displays waybar rofi-wayland SwayNotificationCenter wlogout nwg-dock-hyprland swww satty
+# Utilities
+dnf5 install --assumeyes --skip-unavailable xdg-user-dirs libnotify qt5-qtwayland qt6-qtwayland xdg-desktop-portal-gtk python-pip python3-gobject python-screeninfo tumbler brightnessctl nm-connection-editor network-manager-applet gtk4 breeze libadwaita fuse blueman qt6ct pavucontrol flatpak gvfs NetworkManager-tui
+# Themes
+dnf5 install --assumeyes --skip-unavailable papirus-icon-theme papirus-icon-theme-dark bibata-cursor-themes
 
-dnf5 autoremove --assumeyes
-
-# Removing packages which are now installed via nix/home-manager
-# dnf5 remove --assumeyes kitty xclip wget unzip rsync git nautilus neovim htop zsh fzf vlc jq gum figlet fastfetch ImageMagick wl-clipboard grim slurp cliphist matugen google-noto-emoji-fonts google-noto-sans-cjk-fonts fontawesome-fonts dejavu-fonts-all
-# replacing noto-fonts with google-noto-fonts-common
 # replacing xclip with wl-clipboard
 # Cleaning up to keep the base as small as possible
 # Following packages will be installed using nix/home-manager
