@@ -31,7 +31,7 @@ dnf5 install --assumeyes --skip-unavailable hyprland hyprpaper hyprlock hypridle
 # Wayland general
 dnf5 install --assumeyes --skip-unavailable waypaper nwg-look nwg-displays waybar rofi-wayland SwayNotificationCenter wlogout nwg-dock-hyprland swww satty
 # Utilities
-dnf5 install --assumeyes --skip-unavailable xdg-user-dirs libnotify qt5-qtwayland qt6-qtwayland xdg-desktop-portal-gtk python-pip python3-gobject python3-pyquery python-screeninfo tumbler brightnessctl nm-connection-editor network-manager-applet gtk4 breeze libadwaita fuse blueman qt6ct pavucontrol flatpak gvfs gvfs-mtp NetworkManager-tui kvantum gcc cmake meson ghostty
+dnf5 install --assumeyes --skip-unavailable xdg-user-dirs libnotify qt5-qtwayland qt6-qtwayland xdg-desktop-portal-gtk python-pip python3-gobject python3-pyquery python-screeninfo tumbler brightnessctl nm-connection-editor network-manager-applet gtk4 breeze libadwaita fuse blueman qt6ct pavucontrol flatpak gvfs gvfs-mtp NetworkManager-tui kvantum gcc gcc-c++ cmake meson ghostty
 # Themes
 dnf5 install --assumeyes --skip-unavailable papirus-icon-theme papirus-icon-theme-dark bibata-cursor-themes
 
