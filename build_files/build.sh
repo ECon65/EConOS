@@ -24,13 +24,14 @@ dnf5 copr enable --assumeyes peterwu/rendezvous
 # dnf5 copr enable --assumeyes wef/cliphist
 dnf5 copr enable --assumeyes tofik/nwg-shell
 dnf5 copr enable --assumeyes erikreider/SwayNotificationCenter
+dnf5 copr enable --assumeyes scottames/ghostty
 
 # Hyprland
 dnf5 install --assumeyes --skip-unavailable hyprland hyprpaper hyprlock hypridle hyprpicker xdg-desktop-portal-hyprland uwsm hyprland-plugins hyprdim hyprsunset
 # Wayland general
 dnf5 install --assumeyes --skip-unavailable waypaper nwg-look nwg-displays waybar rofi-wayland SwayNotificationCenter wlogout nwg-dock-hyprland swww satty
 # Utilities
-dnf5 install --assumeyes --skip-unavailable xdg-user-dirs libnotify qt5-qtwayland qt6-qtwayland xdg-desktop-portal-gtk python-pip python3-gobject python-screeninfo tumbler brightnessctl nm-connection-editor network-manager-applet gtk4 breeze libadwaita fuse blueman qt6ct pavucontrol flatpak gvfs NetworkManager-tui kvantum
+dnf5 install --assumeyes --skip-unavailable xdg-user-dirs libnotify qt5-qtwayland qt6-qtwayland xdg-desktop-portal-gtk python-pip python3-gobject python3-pyquery python-screeninfo tumbler brightnessctl nm-connection-editor network-manager-applet gtk4 breeze libadwaita fuse blueman qt6ct pavucontrol flatpak gvfs gvfs-mtp NetworkManager-tui kvantum gcc cmake meson ghostty
 # Themes
 dnf5 install --assumeyes --skip-unavailable papirus-icon-theme papirus-icon-theme-dark bibata-cursor-themes
 
@@ -46,6 +47,7 @@ dnf5 copr disable --assumeyes peterwu/rendezvous
 # dnf5 copr disable --assumeyes wef/cliphist
 dnf5 copr disable --assumeyes tofik/nwg-shell
 dnf5 copr disable --assumeyes erikreider/SwayNotificationCenter
+dnf5 copr disable --assumeyes scottames/ghostty
 
 #### Example for enabling a System Unit File
 
