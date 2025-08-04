@@ -49,6 +49,9 @@ dnf5 copr disable --assumeyes tofik/nwg-shell
 dnf5 copr disable --assumeyes erikreider/SwayNotificationCenter
 dnf5 copr disable --assumeyes scottames/ghostty
 
+# Remove dunst
+rpm-ostree override remove dunst
+
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
